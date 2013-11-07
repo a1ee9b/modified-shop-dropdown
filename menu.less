@@ -1,0 +1,76 @@
+#menu-main {
+    height: 35px;
+
+    ul {
+        li.level-0 {
+            margin-left: 0px;
+            a {
+                display: block;
+                padding: 5px 10px;
+                margin-right: -1px;
+
+                span {
+                    font-size: 0.7em;
+                }
+            }
+        }
+
+        li {
+            &:hover > ul {
+                display: block;
+            }
+        }
+    }
+    ul.dropdown-menu {
+        margin: 0;
+        padding: 0;
+        border-width: 0px;
+
+        li {
+            margin-right: 1px;
+
+            a {
+                background-color: transparent;
+                border: 0;
+            }
+            a:hover {
+                background-color: #F2F3F4;
+            }
+
+            p {
+                padding: 0px 10px 0px 10px;
+            }
+        }
+
+        // Submenus were removed in Bootstrap 3 because they feel unsuitable
+        // for mobile devices. The following was copied from Bootstrap version 2
+        .dropdown-submenu {
+            position: relative;
+        }
+        .dropdown-submenu > .dropdown-menu {
+            top: 0;
+            left: 100%;
+            margin: 0px 3px 0px 0px;
+        }
+        .dropdown-submenu:hover > .dropdown-menu {
+            display: block;
+        }
+        .dropdown-submenu > a:after{
+            display: block;
+            content: " ";
+            float: right;
+            width: 0;
+            height: 0;
+            border-color: transparent;
+        }
+        .dropdown-submenu:hover > a:after{
+        }
+        .dropdown-submenu.pull-left{
+            float: none;
+        }
+        .dropdown-submenu.pull-left > .dropdown-menu{
+            left: -100%;
+            margin-left: 10px;
+        }
+    }
+}
