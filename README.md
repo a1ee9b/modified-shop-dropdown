@@ -10,11 +10,11 @@ An easy to customize dropdown menu for the modified:shop
 - Copy the files, according to the folder structure, to your template
 - include the box wherever you want (probably index.html)
 
-``
-<div id="menu-main">
-	{$box_DROPDOWN}
-</div>
-``
+
+	<div id="menu-main">
+		{$box_DROPDOWN}
+	</div>
+
 
 # Customization
 Edit smarty/dropdown.tpl to your liking. A new UL will be created for every level.
